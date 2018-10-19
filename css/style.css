@@ -1,39 +1,69 @@
 * {
-    margin: 10px;
+    margin: 0px;
     padding: 10px;
     box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
 }
 .container {
     display: flex;
     flex-flow: column nowrap;
 }
     .header {
-        background: #000;
+        background: url(../images/bg-2.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
         display: flex;
         flex-flow: column nowrap;
     }
         .menu {
-            background: #2d4059;
+            background: rgba(0, 0, 0, .1);
             display: flex;
-            height: 100px;
+            height: 60px;
             flex-flow: row nowrap;
             align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, .5);
         }
             .logo {
-                background: #ea5455;
-                height: 30px;
                 flex: 1 1 auto;
             }
+                .logo a {
+                    color: #fff;
+                    font-size: 30px;
+                }
+                .logo a:hover {
+                    color: #343434;
+                }
             .nav {
-                background: #ea5455;
-                height: 30px;
                 flex: 5 1 auto;
             }
+                .nav a {
+                    color: #fff;
+                    font-size: 11px;
+                    padding: 0 10px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+                .nav a:hover {
+                    color: #343434;
+                }
             .social {
-                background: #ea5455;
-                height: 30px;
+                display: flex;
                 flex: 1 1 auto;
             }
+                .social a {
+                    font-size: 18px;
+                    color: #fff;
+                    padding: 0 5px;
+                }
+                .social a:hover {
+                    color: #343434;
+                }
         .principal-text {
             background: #f07b3f;
         }
